@@ -1,33 +1,71 @@
+.player-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .App {
+  font-family: Verdana sans-serif;
   text-align: center;
+  width: 100%;
+  background-image: url(https://a.espncdn.com/photo/2016/0520/r84883_1600x1000cc.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 2.4rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+.topButton {
+  align-items: center;
+  border-bottom: 1px solid rgb(221, 221, 221);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  height: 70px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0 3%;
+  width: 100%;
+  -webkit-box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42);
+  -moz-box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42);
+  box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42);
 }
 
-.App-link {
-  color: #61dafb;
+.dark-mode-toggle {
+  background: rgb(226, 236, 255);
+  border-radius: 50px;
+  border: 1px solid black;
+  height: 20px;
+  position: relative;
+  width: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.toggle {
+  border-radius: 50px;
+  height: 18px;
+  left: 0;
+  position: absolute;
+  transition: 0.2s;
+  width: 20px;
+}
+
+.toggled {
+  left: 18px;
+}
+
+
+.dark-mode {
+  color: #ff9;
 }
